@@ -51,8 +51,11 @@ int main()
     int *reversed= reverse(numbers);
     cout<<"the reversed numbers"<<endl;
      for (int i = 0; i < sizeof(numbers); ++i) {
-        cout<< numbers[i];
+         cout << *(reversed + i) << endl;
+         numbers[i] =*(reversed + i);
     }
+     cout << "Sum of given array is " << sum(numbers, 5);
+    cout << "multiple of given array is " << multply(numbers, 5);
     return 0;
 }
  
