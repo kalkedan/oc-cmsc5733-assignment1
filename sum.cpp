@@ -28,6 +28,17 @@ int main()
     int n = sizeof(arr) / sizeof(arr[0]);
     cout << "Sum of given array is " << sum(arr, n);
     cout << "multiple of given array is " << multply(arr, n);
+      int numbers[5];
+
+    cout << "Enter 5 numbers: " << endl;
+
+    //  store input from user to array
+    for (int i = 0; i < 5; ++i) {
+        cin >> numbers[i];
+    }
+    cout << "Sum of given array is " << sum(numbers, 5);
+    cout << "multiple of given array is " << multply(numbers, 5);
+
     return 0;
 }
  
