@@ -50,7 +50,7 @@ int main()
     cout << "multiple of given array is " << multply(numbers, 5);
     int *reversed= reverse(numbers);
     cout<<"the reversed numbers"<<endl;
-     for (int i = 0; i < 5; ++i) {
+     for (int i = 0; i < sizeof(numbers); ++i) {
         cout<< numbers[i];
     }
     return 0;
